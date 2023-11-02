@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":dependencyDashboard",
+    ":disableRateLimiting",
+    "docker:enableMajor",
+    ":automergeDigest",
+    ":enablePreCommit",
+    "github>kstaniek/renovate-config:commit-message",
+    "github>kstaniek/renovate-config:pr-labels",
+    "github>kstaniek/renovate-config:semantic-commits",
+    "github>kstaniek/renovate-config:generic-regex-manager.json5"
+  ],
+  "onboarding": false,
+  "requireConfig": "optional",
+  "timezone": "Europe/Warsaw",
+  "dependencyDashboardTitle": "Renovate Dashboard",
+  "suppressNotifications": ["prIgnoreNotification"],
+  "commitBodyTable": true,
+  "rebaseWhen": "conflicted"
+}
